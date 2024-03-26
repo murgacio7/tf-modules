@@ -1,5 +1,3 @@
-
-
 resource "google_service_account" "default" {
   account_id   = var.sa_account_id   #"gke-cluster"
   display_name = var.sa_display_name #"service account for gke cluster"
