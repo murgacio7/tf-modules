@@ -6,7 +6,6 @@ variable "sa_display_name" {
 }
 variable "cluster_name" {
   type    = string
-  default = "my-gke-cluster2"
 }
 variable "cluster_location" {
   type    = string
