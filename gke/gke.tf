@@ -1,4 +1,4 @@
-resource "google_service_account" "default" {
+resource "google_service_account" "default_sa" {
   account_id   = var.sa_account_id   # "gke-cluster"
   display_name = var.sa_display_name # "service account for gke cluster"
 }
@@ -10,6 +10,6 @@ resource "google_container_cluster" "terra4m" {
 
   node_config {
     disk_size_gb    = var.disk_size_gb                     # 60
-    service_account = google_service_account.default.email
+    service_account = google_service_account.default_sa.email
   }
 }
