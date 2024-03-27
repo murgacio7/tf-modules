@@ -10,6 +10,6 @@ resource "google_container_cluster" "terra4m" {
 
   node_config {
     disk_size_gb    = var.disk_size_gb                     # 60
-    service_account = "63132520703-compute@developer.gserviceaccount.com"
+    service_account = google_service_account.default.email
   }
 }
