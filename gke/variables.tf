@@ -13,12 +13,10 @@ variable "cluster_location" {
 }
 variable "node_count" {
   type    = number
-  default = 1
 }
 
 variable "disk_size_gb" {
   type    = number
-  default = 60
 }
 variable "region" {
   type    = string
